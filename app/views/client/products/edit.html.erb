@@ -1,0 +1,23 @@
+<!-- <form method="post" action="/client/products"> -->
+  <%= form_tag "/client/products/#{ @product[:id] }", method: :patch do %>
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  
+  <div>
+    Price: <input type="text" name="price">
+  </div>
+
+  <div>
+    Description: <input type="text" name="description">
+  </div>
+
+  <div>
+    Supplier Id: <input type="text" name="supplier_id">
+  </div>
+
+  <input type="submit" value="Edit Product">
+
+  <% end %>
+
+<!-- </form> -->
